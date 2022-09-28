@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            border: 0px solid red;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        }   
+        #navbar>div~div{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            border:0px solid blue;
+            align-items: center;
+            
+        }
+        a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        button{
+            padding: 8px 23px;
+            background-color: white;
+            border: 1px solid green;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+        div>a:nth-child(1){
+            color: blue;
+        }
+        div>a:hover{
+            color: green;
+        }
+        input[type="text"]{
+            width: 30%;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid #ccc;
+            margin-left: -50px;
+        }
+        input+button{
+            margin-left: -100px;
+            border-radius: 0px 5px 5px 0px;
+            background-color: black;
+            color:white;
+            cursor: pointer;
+        }
+        #navbar+div{
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap:5px;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            padding: 15px 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            
+           
+        }
+        #navbar+div>div{
+            border: 0px solid red;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #navbar+div>div:nth-child(9),#navbar+div>div:nth-child(8),#navbar+div>div:nth-child(7){
+            padding-left: 25px;
+        }
+        #header{
+            width: 100%;
+            height: 450px;
+            border: 0px solid red;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #E57373;
+        }
+        #header>div:nth-child(1){
+            border: 0px solid blue;
+            padding-top: 100px;
+            
+        }
+        #header>div>h1{
+            width: 90%;
+            border: 0px solid green;
+            font-size: 50px;
+            margin: auto;
+            text-align: center;
+            color: white;
+            
+        }
+        h1+div{
+            border: 0px solid red;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        h1+div>input{
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0px 0px 5px;
+        }
+        input[type="submit"]{
+            width: 15%;
+            border-radius: 0px 5px 5px 0px;
+            color: whitesmoke;
+            background-color: #4CAF50;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+       
+        h1+div+div{
+            border: 0px solid pink;
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+        }
+        
+        h3~a{
+            border: 1px solid white;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        h3~a:hover{
+            background-color: white;
+            color:black;
+        }
+        h3{
+            font-family: arial;
+        }
+        #header+div{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            padding: 15px 0px;
+            
+        }
+        #header+div>h2{
+            border: 0px solid red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header+div>img{
+            border: 0px solid red;
+            margin-left: 50px;
+            
+        }
+        #header+div+h1{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2.5%;
+            margin-top: 40px;
+        }
+        #mid-1{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap:0px 20px;
+            width: 95%;
+            margin: auto;
+            border: 0px solid red;
+        }
+        #mid-1>div{
+            border: 0px solid blue;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        #mid-1>div>img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #mid-1>div>img+div{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        #mid-1>div>img+div>img{
+            margin: 12px;
+        }
+        #mid-1>div>img+div>h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        #mid-1>div>img+div+p{
+            width: 90%;
+            border: 0px solid green;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 12px;
+
+        }
+        #mid-1>div>img+div+p+div{
+            display: flex;
+            justify-content: start;
+            padding-left: 12px;
+
+        }
+        #mid-1>div>img+div+p+div>p:nth-child(1){
+            margin-right: 4px;
+            color:gold;
+        }
+        #mid-1>div>img+div+p+div>p:nth-child(2){
+            color:#ccc;
+        }
+        hr{
+            
+            margin-top: -10px;
+        }
+        hr+div{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 12px;
+
+        }
+        hr+div>p:nth-child(2){
+            font-family: Arial, Helvetica, sans-serif;
+            width: 35%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        hr+div>p:nth-child(1){
+            color:#ccc;
+        }
+        #mid-1+h1{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2.5%;
+            margin-top: 60px;
+        }
+        #mid-2{
+            display: grid;
+            width: 95%;
+            grid-template-columns: repeat(5, 1fr);
+            
+            gap:50px;
+            margin: auto;
+            margin-top: 25px;
+        }
+        #mid-2>div:nth-child(1),#mid-2>div:nth-child(3),#mid-2>div:nth-child(5){
+            background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png");
+            width: 100%;
+            height: 340px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            border: 0px solid red;
+            
+        }
+        #mid-2>div:nth-child(2),#mid-2>div:nth-child(4){
+            background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png");
+            width: 100%;
+            height: 340px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+        }
+        #mid-2>div{
+            color:white;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mid-2>div>h2{
+            margin-top: -20px;
+        }
+        #mid-3{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+            gap:50px;
+            background-color: #E0F7FA;
+            border: 0px solid red;
+        }
+        #mid-3>div{
+            border: 0px solid blue;
+            
+            color: black;
+            margin-left: 5%;
+        }
+        #mid-3>div>p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            width: 75%;
+        }
+        #mid-3>div>h1{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 78%;
+            border: 0px solid red;
+        }
+        #mid-3+h1{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 90px;
+            margin-left: 30px;
+        }
+        #mid-4{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            border: 0px solid red;
+            gap:40px 20px;
+            margin-top: 75px;
+            
+        }
+        #mid-4>div{
+            border: 0px solid blue;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        #mid-4>div>div{
+            border: 0px solid green;
+            width: 30%;
+            margin: auto;
+           
+            
+        }
+        #mid-5{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 1px solid red;
+            gap:50px;
+            margin-top: 50px;
+            background-color: navy;
+            padding-left: 30px;
+        }
+        #mid-5>div{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mid-5>div>h2{
+            width: 65%;
+        }
+        #mid-5>div>p{
+            width: 80%;
+        }
+        #mid-5>div>img{
+            width: 100%;
+        }
+        
+       
+        
+       
+
+    </style>
+    
+
+</head>
+<body>
+    <div id="navbar">
+        <div><img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""></div>
+        <input type="text" placeholder="What service are you looking for today?">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div>
+            <a href="https://www.masaischool.com/" target="_blank">Fleverr Buslness</a>
+            <a href="">Explore</a>
+            <a href="">English</a>
+            <a href="">INR</a>
+            <a href="">Become a Seller</a>
+            <a href="">Sign in</a>
+            <button>Join</button>
+        </div>
+    </div>
+    <div>
+        <div>Graphic & Design</div>
+        <div>Digital Marketing</div>
+        <div>Writing & Translation</div>
+        <div>Video & Animation</div>
+        <div>Music & Audio</div>
+        <div>Programming & Tech</div>
+        <div>Business</div>
+        <div>Lifestyle</div>
+        <div>Trending</div>
+    </div>
+    <div id="header">
+        <div>
+            <h1>Find the perfect <i>freelance</i> services for your business</h1>
+            <div>
+                <input type="search" placeholder="Try building mobile app">
+                <input type="submit" value="Search">
+            </div>
+            <div>
+                <h3>Popular:</h3>
+                <a href="">Website Design</a><a href="">WordPress</a><a href="">Logo Design</a><a href="">Video Editing</a>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div>
+        <h2>Trusted by:</h2>
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/facebook.31d5f92.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/google.517da09.png" alt="">
+        
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/netflix.e3ad953.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/pandg.8b7310b.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal.ec56157.png" alt="">
+    </div>
+    <h1>
+        Recently Viewed & More
+    </h1>
+    <div id="mid-1">
+        <div>
+         <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/155052792/original/27df256e3553f1ae05f7bdfb7fd16c23fcd11815.jpg" alt="">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/ad369815533d2f53b7c36ecebba15f2d-1573380524550/CS%20Icon.png" alt="">
+                <h3>Creative Squad</h3>
+            </div>
+            <p>Other Studio will offer custom ploygonal logo...</p>
+            <div>
+                <p><i class="fa-sharp fa-solid fa-star"></i>4.9</p>
+                <p>(114)</p>
+            </div>
+            <hr>
+            <div>
+                <p><i class="fa-solid fa-heart"></i></p>
+                <p>STARTING AT RS.8,8593</p>
+            </div>
+        
+        </div>
+        <div>
+        <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/111778050/original/9f7626b3abebd03da4d7b887ea62f9377f608d04.jpeg" alt="">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/ad369815533d2f53b7c36ecebba15f2d-1573380524550/CS%20Icon.png" alt="">
+                <h3>Creative Squad</h3>
+            </div>
+            <p>Other Studio will offer custom ploygonal logo...</p>
+            <div>
+                <p><i class="fa-sharp fa-solid fa-star"></i>4.9</p>
+                <p>(114)</p>
+            </div>
+            <hr>
+            <div>
+                <p><i class="fa-solid fa-heart"></i></p>
+                <p>STARTING AT RS.8,8593</p>
+            </div>
+        
+        </div>
+        <div>
+            <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/9230987/original/7939cbf3a7fa55a3167dce160b41154a1341a497.png" alt="">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/ad369815533d2f53b7c36ecebba15f2d-1573380524550/CS%20Icon.png" alt="">
+                <h3>Creative Squad</h3>
+            </div>
+            <p>Other Studio will offer custom ploygonal logo...</p>
+            <div>
+                <p><i class="fa-sharp fa-solid fa-star"></i>4.9</p>
+                <p>(114)</p>
+            </div>
+            <hr>
+            <div>
+                <p><i class="fa-solid fa-heart"></i></p>
+                <p>STARTING AT RS.8,8593</p>
+            </div>
+        </div>
+        <div>
+          <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/169205843/original/ff0410a5e19d944216aca3eaae201434e4d6ae56.png" alt="">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/ad369815533d2f53b7c36ecebba15f2d-1573380524550/CS%20Icon.png" alt="">
+                <h3>Creative Squad</h3>
+            </div>
+            <p>Other Studio will offer custom ploygonal logo...</p>
+            <div>
+                <p><i class="fa-sharp fa-solid fa-star"></i>4.9</p>
+                <p>(114)</p>
+            </div>
+            <hr>
+            <div>
+                <p><i class="fa-solid fa-heart"></i></p>
+                <p>STARTING AT RS.8,8593</p>
+            </div>
+        
+        </div>
+        <div>
+            <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/41108355/original/66cefa001650287eaa2b9372efda73e0fdf53978.jpg" alt="">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/ad369815533d2f53b7c36ecebba15f2d-1573380524550/CS%20Icon.png" alt="">
+                <h3>Creative Squad</h3>
+            </div>
+            <p>Other Studio will offer custom ploygonal logo...</p>
+            <div>
+                <p><i class="fa-sharp fa-solid fa-star"></i>4.9</p>
+                <p>(114)</p>
+            </div>
+            <hr>
+            <div>
+                <p><i class="fa-solid fa-heart"></i></p>
+                <p>STARTING AT RS.8,8593</p>
+            </div>
+            
+        </div>
+    </div>
+    <h1>Popular professional services</h1>
+    <div id="mid-2">
+        <div>
+            <h4>Build your brand</h4>
+            <h2>Logo Design</h2>
+        </div>
+        <div>
+            <h4>Customize your site</h4>
+            <h2>WordPress</h2>
+        </div>
+        <div>
+            <h4>Build your brand</h4>
+            <h2>Logo Design</h2>
+        </div>
+        <div>
+            <h4>Customize your site</h4>
+            <h2>WordPress</h2>
+        </div>
+        <div>
+            <h4>Build your brand</h4>
+            <h2>Logo Design</h2>
+        </div>
+    </div>
+    <div id="mid-3">
+        <div>
+            <h1>A whole world of freelance talent at your fingertips</h1>
+            <h3><i class="fa-regular fa-circle-check"></i> The best for every budget</h3>
+            <p>Find high-quality service at every price point. No hourly rates, just project based pricing.</p>
+            <h3><i class="fa-regular fa-circle-check"></i> Quality work done quickly</h3>
+            <p>Find the right to began working on your project withing minutes.</p>
+            <h3><i class="fa-regular fa-circle-check"></i> Protected payments, every time</h3>
+            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+            <h3><i class="fa-regular fa-circle-check"></i> 24/7 support</h3>
+            <p>Questions? Our round-the-clock support team is available to help anytime,anywhere.</p>
+                
+        </div>
+        <div></div>
+    </div>
+        
+    <h1>Explore the marketplace</h1>
+
+    <div id="mid-4">
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/graphics-design.d32a2f8.svg" alt=""></div>
+            <p>Graphic & Design</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/online-marketing.74e221b%20(1).svg" alt=""></div>
+            <p>Digital Marketing</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/programming.9362366.svg" alt=""></div>
+            <p>Writing & Translation</p>
+                
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/video-animation.f0d9d71.svg" alt=""></div>
+            <p>Video & Animation</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/music-audio.320af20.svg" alt=""></div>
+            <p>Music & Audio</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/programming.9362366.svg" alt=""></div>
+            <p>Programming & Tech</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/business.bbdf319.svg" alt=""></div>
+            <p>Business</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/lifestyle.745b575%20(1).svg" alt=""></div>
+            <p>Lifestyle</p>
+        </div>
+        <div>
+            <div><img src="file:///C:/Users/Ankit/Downloads/business.bbdf319.svg" alt=""></div>
+            <p>Data</p>
+        </div>
+
+    </div>
+    <div id="mid-5">
+        <div>
+            <h2>A business solution designed for <i>teams</i></h2>
+            <p><i class="fa-regular fa-circle-check"></i>Upgrade to a curated experienced packed with tools and benefits, dedicated to business.</p>
+            <p><i class="fa-regular fa-circle-check"></i>Connect to freelancers with proven business experience</p>
+            <p><i class="fa-regular fa-circle-check"></i>Get matched with the perfect talent by a customer success manager</p>
+            <p><i class="fa-regular fa-circle-check"></i>Manage teamwork and boost productivity with one powerful workspace</p>
+        </div>
+        <div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624757/business-desktop-870-x1.png" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>
