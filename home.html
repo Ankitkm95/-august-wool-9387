@@ -20,8 +20,21 @@
             justify-content: space-between;
             padding: 25px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            align-items: center;
+            height: 70px;
 
         }   
+        #navbar>div:nth-child(1){
+            display: flex;
+            width: 8%;
+            border: 0px solid red;
+            align-items: center;
+        }
+        #navbar img{
+            width:100%;
+            border: 0px solid blue;
+           
+        }
         #navbar>div~div{
             width: 55%;
             display: flex;
@@ -55,10 +68,11 @@
             color: green;
         }
         input[type="text"]{
-            width: 30%;
+            width: 25%;
             border-radius: 5px 0px 0px 5px;
             border: 1px solid #ccc;
             margin-left: -50px;
+            height: 69%;
         }
         input+button{
             margin-left: -100px;
@@ -66,6 +80,7 @@
             background-color: black;
             color:white;
             cursor: pointer;
+            height: 75%;
         }
         #navbar+div{
             display: grid;
@@ -294,7 +309,7 @@
             grid-template-columns: repeat(2, 1fr);
             
             gap:50px;
-            background-color: #E0F7FA;
+            background-color: #f1fdf7;
             border: 0px solid red;
         }
         #mid-3>div{
@@ -342,11 +357,12 @@
         #mid-5{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            border: 1px solid red;
+            border: 0px solid red;
             gap:50px;
             margin-top: 50px;
-            background-color: navy;
+            background-color: #0d084d;
             padding-left: 30px;
+            padding-top: 50px;
         }
         #mid-5>div{
             font-size: 20px;
@@ -361,9 +377,273 @@
         #mid-5>div>img{
             width: 100%;
         }
+        #mid-5 button{
+            background-color: #AED581;
+            color: white;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-bottom: 75px;
+            cursor: pointer;
+        }
+        #mid-6{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            border: 0px solid red;
+            gap:50px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        #mid-6>div{
+            border: 0px solid blue;
+        }
         
-       
+        #mid-6>div>div:nth-child(1){
+            border: 0px solid green;
+            width: 65%;
+            font-size: 22px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            
+            
+        }
+        #mid-6 span{
+            font-weight: bold;
+        }
+        #mid-6>div>div+p{
+            width: 85%;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: justify;
+            margin-top: -10px;
+            margin-left: 3px;
+        }
+        #mid-7{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 0px solid red;
+            background-color: #446ee7;
+            padding-bottom: 40px;
+            width: 95%;
+            margin: auto;
+        }
+        #mid-7>div{
+            border: 0px solid blue;
+            color: white;
+        }
+        #mid-7>div:nth-child(1){
+            margin-left: 10%;
+        }
+        #mid-7>div>p:nth-child(1){
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mid-7>div>p:nth-child(1)>span{
+            font-family: monospace;
+            font-weight: 300;
+        }
+        #mid-7 h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+        #mid-7 i{
+            font-family: monospace;
+            font-size: 35px;
+            border: 0px solid red;
+            display: block;
+            margin-top: -30px;
+        }
+        #mid-7 i+p{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mid-7 button{
+            border: none;
+            color: blue;
+            padding: 13px 25px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        #mid-8{
+            border: 0px solid red;
+            margin: 100px 0px;
+            background-color: #f5f5f5;
+            padding: 100px 0px;
+
+        }
+        #mid-8>div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            border: 0px solid red;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 3%;
+            margin-bottom: 10px;
+            padding-right: 4%;
+            
+        }
+        #mid-8>div+div{
+            display: flex;
+            justify-content: space-evenly;
+            border: 0px solid blue;
+        }
+        #mid-8>div+div>div{
+            width: 22%;
+        }
+        #mid-8>div+div>div>img{
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+        }
         
+        #mid-8 img+div{
+            display: flex;
+            margin-left: 12px;
+            align-items:center ;
+            
+
+        }
+        #mid-8 img+p{
+            width: 58%;
+            border: 0px solid red;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+        #mid-8 img+div>img{
+            width: 15%;
+            height: 50%;
+            margin-right: 10px;
+            border-radius: 55%;
+
+        }
+        #mid-8 img+p>span{
+            font-weight: lighter;
+        }
+        #mid-8>div+div>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+        }
+        #mid-9{
+            border: 0px solid red;
+            padding: 0px 27px;
+            margin-bottom: 75px;
+        }
+        #mid-9>div:nth-child(1){
+            display: flex;
+            border: 0px solid blue;
+            align-items: center;
+            justify-content: space-between;
+            font-family: monospace;
+            font-size: 18px;
+        }
+        #mid-9>div+div{
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 0px solid green;
+        }
+        #mid-9>div+div>div{
+            width: 31.5%;
+            border: 0px solid yellow;
+        }
+        #mid-9>div+div>div>img{
+            width: 100%;
+            border-radius: 3px;
+        }
+        #mid-9>div+div>div>h4{
+            font-size: 18px;
+        }
+        #mid-9>div+div>div>p{
+            font-size: 18px;
+        }
+        #mid-10{
+            background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png");
+            border: 0px solid blue;
+            height: 440px;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 45px;
+            padding: 65px 90px;
+        }
+        #mid-10>p{
+            width: 50%;
+        }
+        #mid-10>button{
+            background-color: #8BC34A;
+            color: whitesmoke;
+            padding: 12px 25px;
+            border: none;
+        }
+        #footer{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            height: auto;
+            border: 0px solid red;
+            padding: 25px;
+        }
+        #footer>div{
+            border: 0px solid blue;
+            color: black;
+            
+
+        }
+        #footer>div>a{
+            color: black;
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        #footer>div>h3{
+            padding-left: 20px;
+        }
+        #footer+hr{
+            width: 94%;
+            margin: auto;
+            margin-bottom: 25px;
+           
+        }
+        #last{
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            border: 0px solid red;
+            padding: 0% 2%;
+        }
+        #last>div:nth-child(1){
+            width: 30%;
+            height: 100%;
+            border: 0px solid blue;
+            display: flex;
+            align-items: center;
+            color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #last>div+div{
+            width: 40%;
+            height: 100%;
+            border: 0px solid blue;
+        }
+        #last>div:nth-child(1)>img{
+            width: 25%;
+            margin-right: 20px;
+            border: 0px solid green;
+            margin-bottom: 7px;
+        }
+        #last>div+div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 25px;
+        }
        
 
     </style>
@@ -372,7 +652,7 @@
 </head>
 <body>
     <div id="navbar">
-        <div><img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""></div>
+        <div><img src="https://brandlogos.net/wp-content/uploads/2022/05/fiverr-logo_brandlogos.net_f2xbf.png" alt=""></div>
         <input type="text" placeholder="What service are you looking for today?">
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
         <div>
@@ -603,11 +883,172 @@
             <p><i class="fa-regular fa-circle-check"></i>Connect to freelancers with proven business experience</p>
             <p><i class="fa-regular fa-circle-check"></i>Get matched with the perfect talent by a customer success manager</p>
             <p><i class="fa-regular fa-circle-check"></i>Manage teamwork and boost productivity with one powerful workspace</p>
+            <button>Explore Flverr Business</button>
         </div>
         <div>
             <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624757/business-desktop-870-x1.png" alt="">
         </div>
 
+    </div>
+    <div id="mid-6">
+        <div></div>
+        <div>
+           <div><p>Clitlin Tormey, Chief Commerical Officer &nbsp; | &nbsp;<span>NAADAM</span></p></div>
+            <p>"We've used Fiverr for Shopify web development, graphic design, and backend web development. Working with Fiverr makes my job a little easier every day."</p>
+        </div>
+        <p></p>
+    </div>
+    <div id="mid-7">
+        <div>
+            <p>fiverr<span>logomaker.</span></p>
+            <h2>Make an incredible logo</h2>
+            <i>in minutes</i>
+            <p>Pre-designed by top talent. Just add your touch.</p>
+            <button>Try Flverr Logo Maker</button>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <div id="mid-8">
+        <div>
+            <h1>Get inspired with projects made by our freelancers</h1>
+            <a href="">See More Projects</a>
+        </div>
+        
+        <div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png" alt="">
+                <div>
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                    <p>Product Photography <span>by passionshake</span></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg" alt="">
+                <div>
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                    <p>Product Photography <span>by passionshake</span></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png" alt="">
+                <div>
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                    <p>Product Photography <span>by passionshake</span></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg" alt="">
+                <div>
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                    <p>Product Photography <span>by passionshake</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid-9">
+        <div>
+            <h2>Fiverr guides</h2>
+            <a>See More Guides ></a>
+        </div>
+        <div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560157/guide-start-online-business-552-x2.png">
+                <h4>Start an online Business and work from home</h4>
+                <p>A complete guide to starting a small business online</p>
+            </div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560168/guide-digital-marketing-552-x2.png" alt="">
+                <h4>Digital Marketing made easy</h4>
+                <p>A practical to understand to what is digital marketing</p>
+            </div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560155/guide-create-a-logo-552-x2.png" alt="">
+                <h4>Create a logo for your business</h4>
+                <p>A step-by-step guide to create a memorable business logo</p>
+            </div>
+        </div>
+    </div>
+    <div id="mid-10">
+        <p>Find the <i>talent</i> needed to get your business <i>growing.</i></p>
+        <button>Get Started</button>
+    </div>
+    <hr>
+    <div id="footer">
+        <div>
+            <h3>Categories</h3>
+            <a href="">Graphic & Design</a>
+            <a href="">Digital Marketing</a>
+            <a href="">Writing & Translation</a>
+            <a href="">Video & Animation</a>
+            <a href="">Music & Audio</a>
+            <a href="">Programming & Tech</a>
+            <a href="">Data</a>
+            <a href="">Business</a>
+            <a href="">Lifestyle</a>
+            <a href="">Sitemap</a>
+            
+        </div>
+        <div>
+            <h3>About</h3>
+            <a href="">Careers</a>
+            <a href="">Press & News</a>
+            <a href="">Partnerships</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Service</a>
+            <a href="">Intellectual Property Claims</a>
+            <a href="">Investor Relations</a>
+        </div>
+        <div>
+            <h3>Support</h3>
+            <a href="">Help & Support</a>
+            <a href="">Trust & Safety</a>
+            <a href="">Selling on Fiverr</a>
+            <a href="">Buying on Fiverr</a>
+        </div>
+        <div>
+            <h3>Community</h3>
+            <a href="">Events</a>
+            <a href="">Blog</a>
+            <a href="">Forum</a>
+            <a href="">Community Standards</a>
+            <a href="">Podcast</a>
+            <a href="">Affilates</a>
+            <a href="">Invite a Friend</a>
+            <a href="">Become a Seller</a>
+        </div>
+        <div>
+            <h3>More From Fiverr</h3>
+            <a href="">Fiverr Business</a>
+            <a href="">Fiverr Pro</a>
+            <a href="">Fiverr Studios</a>
+            <a href="">Fiverr logo Maker</a>
+            <a href="">Fiverr Guides</a>
+            <a href="">Get Inspired</a>
+            <a href="">Fiverr Select</a>
+            <a href="">Clear Voice</a>
+            <a href="">Fiverr Workspace</a>
+            <a href="">Learn</a>
+            <a href="">Working not Working</a>
+        </div>
+    </div>
+    <hr>
+    <div id="last">
+        <div>
+            <img src="https://brandlogos.net/wp-content/uploads/2022/05/fiverr-logo_brandlogos.net_f2xbf.png" alt="">
+            <p>© Fiverr International Ltd. 2022</p>
+        </div>
+        <div>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+            <p><i class="fa-brands fa-pinterest"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-solid fa-globe"></i> English</p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i> INR</p>
+            <p><i class="fa-regular fa-circle"></i></p>
+        </div>
     </div>
     
 </body>
