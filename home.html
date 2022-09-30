@@ -22,6 +22,7 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             align-items: center;
             height: 70px;
+           
 
         }   
         #navbar>div:nth-child(1){
@@ -83,26 +84,13 @@
             height: 75%;
         }
         #navbar+div{
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            gap:5px;
-            justify-content: space-between;
-            border: 1px solid #ccc;
-            padding: 15px 5px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            padding: 12px 0px;
+            font-family: Arial, Helvetica, sans-serif;
             
            
-        }
-        #navbar+div>div{
-            border: 0px solid red;
-            display: flex;
-            justify-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            cursor: pointer;
-        }
-        #navbar+div>div:nth-child(9),#navbar+div>div:nth-child(8),#navbar+div>div:nth-child(7){
-            padding-left: 25px;
         }
         #header{
             width: 100%;
@@ -110,7 +98,7 @@
             border: 0px solid red;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            background-color: #E57373;
+            background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png");
         }
         #header>div:nth-child(1){
             border: 0px solid blue;
@@ -307,7 +295,7 @@
         #mid-3{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            
+            padding-right: 25px;
             gap:50px;
             background-color: #f1fdf7;
             border: 0px solid red;
@@ -332,6 +320,10 @@
             font-family: Arial, Helvetica, sans-serif;
             margin-top: 90px;
             margin-left: 30px;
+        }
+        
+        #mid-3>div+div>img{
+            width: 100%;
         }
         #mid-4{
             display: grid;
@@ -394,10 +386,20 @@
             gap:50px;
             margin-top: 40px;
             margin-bottom: 20px;
+           
+            
+        }
+        #mid-6>div:nth-child(1){
+            border: 0px solid red;
+            margin-left: 25px;
+        }
+        #mid-6>div:nth-child(1)>img{
+            width: 100%;
         }
         #mid-6>div{
             border: 0px solid blue;
         }
+        
         
         #mid-6>div>div:nth-child(1){
             border: 0px solid green;
@@ -426,10 +428,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             border: 0px solid red;
+            border: 0px solid red;
             background-color: #446ee7;
-            padding-bottom: 40px;
             width: 95%;
             margin: auto;
+            align-items: center;
+            padding-bottom: 25px;
         }
         #mid-7>div{
             border: 0px solid blue;
@@ -437,6 +441,14 @@
         }
         #mid-7>div:nth-child(1){
             margin-left: 10%;
+            border: 0px solid red;
+            
+        }
+       
+        #mid-7>div:nth-child(2)>img{
+            border: 0px solid white;
+            width: 100%;
+            
         }
         #mid-7>div>p:nth-child(1){
             font-weight: bold;
@@ -644,6 +656,59 @@
             align-items: center;
             font-size: 25px;
         }
+        .drop_down{
+            position:relative;
+            display: inline-block;
+            
+
+        }
+        .dropDownBtn{
+            display: block;
+            border: 0px solid green;
+            cursor: pointer;
+            
+            
+        }
+        .dropDownCnt{
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            
+           }
+        .drop_down:hover .dropDownCnt{
+            display: block;
+        }
+        .dropDownCnt>div{
+            display: grid;
+            width: 1200px;
+            height: auto;
+            border: 0px solid blue;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 55px;
+            
+        }
+        .dropDownCnt>div>div{
+            border: 0px solid green;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .dropDownCnt>div>div>a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            border: none;
+            font-weight: lighter;
+            font-size: 17px;
+        }
+        .dropDownCnt2{
+            display: none;
+            position: absolute;
+        }
+        .dropDownCnt>div>div>h3{
+            margin-left: 20px;
+        }
+       
        
 
     </style>
@@ -666,7 +731,82 @@
         </div>
     </div>
     <div>
-        <div>Graphic & Design</div>
+        <div class="drop_down">
+            <div class="dropDownBtn">Graphic & Design</div>
+            <div class="dropDownCnt">
+                <div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
         <div>Digital Marketing</div>
         <div>Writing & Translation</div>
         <div>Video & Animation</div>
@@ -831,7 +971,9 @@
             <p>Questions? Our round-the-clock support team is available to help anytime,anywhere.</p>
                 
         </div>
-        <div></div>
+        <div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" alt="">
+        </div>
     </div>
         
     <h1>Explore the marketplace</h1>
@@ -891,12 +1033,14 @@
 
     </div>
     <div id="mid-6">
-        <div></div>
+        <div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg" alt="">
+        </div>
         <div>
            <div><p>Clitlin Tormey, Chief Commerical Officer &nbsp; | &nbsp;<span>NAADAM</span></p></div>
             <p>"We've used Fiverr for Shopify web development, graphic design, and backend web development. Working with Fiverr makes my job a little easier every day."</p>
         </div>
-        <p></p>
+        
     </div>
     <div id="mid-7">
         <div>
@@ -907,7 +1051,7 @@
             <button>Try Flverr Logo Maker</button>
         </div>
         <div>
-            <img src="" alt="">
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png" alt="">
         </div>
     </div>
     <div id="mid-8">

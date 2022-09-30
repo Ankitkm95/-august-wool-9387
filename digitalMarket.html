@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #header1{
+            border: 1px solid #ccc;
+            padding: 0px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ac3f5b;
+            
+        }
+        #header1>a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: navy;
+            font-weight: bold;
+        }
+        #header1>div:nth-child(1){
+            width: 7%;
+            border: 0px solid red;
+        }
+        #header1>div:nth-child(1)>img{
+            width: 100%;
+           
+        }
+        #header1>div{
+            border: 0px solid blue;
+            width: 30%;
+            display: flex;
+            justify-self: center;
+        }
+        #header1>div>input[type="text"]{
+            
+            width: 85%;
+            border: 1px solid #ccc;
+            border-radius: 4px 0px 0px 4px;
+            padding: 12px 0px;
+        }
+        #header1>div>input[type="text"]+button{
+            background-color: black;
+            color: white;
+            border-radius: 0px 4px 4px 0px;
+            padding: 12px 13px;
+        }
+        #header1>button{
+            border: 1px solid green;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            border: none;
+        }
+        #header1>button:hover{
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header1">
+        <div>
+            <img src="https://brandlogos.net/wp-content/uploads/2022/05/fiverr-logo_brandlogos.net_f2xbf.png" alt="">
+        </div>
+        <div>
+            <input type="text" placeholder="What service are you looking for today?">
+            <button>A</i></button>
+        </div>
+        
+        <a href="">Fleverr Business</a>
+        <a href="">Explore</a>
+        <a href=""><i class="fa-thin fa-globe"></i> English</a>
+        <a href=""><i class="fa-solid fa-indian-rupee-sign"></i> INR</a>
+        <a href="">Become a Seller</a>
+        <a href="">Sign in</a>
+        <button>Join</button>
+    </div>
+</body>
+</html>
