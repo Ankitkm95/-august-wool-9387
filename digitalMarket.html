@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore</title>
     <style>
         body{
             margin: 0px;
             padding: 0px;
+            height: 1500px;
         }
         #header1{
             border: 1px solid #ccc;
@@ -16,8 +17,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #ac3f5b;
-            
+            position: sticky;
+            top: 0;
+            bottom: 95.6;
         }
         #header1>a{
             text-decoration: none;
@@ -51,6 +53,10 @@
             color: white;
             border-radius: 0px 4px 4px 0px;
             padding: 12px 13px;
+            
+        }
+        .input{
+            visibility: hidden;
         }
         #header1>button{
             border: 1px solid green;
@@ -58,12 +64,95 @@
             background-color: white;
             border-radius: 5px;
             font-size: 14px;
-            border: none;
+            
         }
         #header1>button:hover{
             background-color: green;
             color: white;
         }
+        #header2{
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px 0px;
+            position: sticky;
+            top: 95.16px;
+            visibility: hidden;
+            width: 100%;
+            border-bottom: 0px;
+            background-color: #cccccc;
+        }
+        #header2 a{
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+        }
+        .dropDownCnt{
+            display: none;
+            position: absolute;
+            /*top: 100%;*/
+        }
+        .dropDown:hover .dropDownCnt{
+            display: block;
+        }
+        .dropDown{
+            border: 0px solid red;
+            
+        }
+        .hover1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 85%;
+            gap: 50px;
+            background-color: #cccccc;
+            justify-content: space-evenly;
+            padding: 10px 15px;
+            
+        }
+        .hover1>div>a{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .hover2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50%;
+            gap: 70px;
+            background-color: #cccccc;
+            justify-content: space-around;
+            padding: 10px 15px;
+        }
+        .hover2>div>a{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        #header2+p{
+            font-family: monospace;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+        #header2+p+div{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+        #header2+p+div>p>a{
+            text-decoration: none;
+            color: blue;
+            
+        }
+        #header2+p+div>p{
+           border: 0px solid red;
+           margin-top: -18px;
+        }
+        #header2+p+div+h3{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 25px;
+        }
+        
+        
+
 
     </style>
 </head>
@@ -72,7 +161,7 @@
         <div>
             <img src="https://brandlogos.net/wp-content/uploads/2022/05/fiverr-logo_brandlogos.net_f2xbf.png" alt="">
         </div>
-        <div>
+        <div class="input">
             <input type="text" placeholder="What service are you looking for today?">
             <button>A</i></button>
         </div>
@@ -85,5 +174,271 @@
         <a href="">Sign in</a>
         <button>Join</button>
     </div>
+    <div id="header2">
+        <div class="dropDown">
+            <a href="">Graphic & Design</a>
+            <div class="dropDownCnt">
+                <div class="hover1">
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="">Digital Marketing</a>
+            <div class="dropDownCnt">
+                <div class="hover2">
+                    <div>
+                        <a href="">Social Media Marketing</a>
+                        <a href="">Social Media Advertising</a>
+                        <a href="">Search Engine Optimization (SEO)</a>
+                        <a href="">Local SEO</a>
+                        <a href="">Marketing Strategy</a>
+                        <a href="">Public Relations</a>
+                        <a href="">Guest Posting</a>
+                        <a href="">Video Marketing</a>
+                        <a href="">Email Marketing</a>
+                        <a href="">Web Analytics</a>
+                        <a href="">Text Message Marketing</a>
+                        <a href="">Crowdfunding</a>
+                    </div>
+                    <div>
+                        <a href="">Marketing Advice</a>
+                        <a href="">Search Engine Marketing (SEM)</a>
+                        <a href="">Display Advertising</a>
+                        <a href="">E-Commerce Marketing</a>
+                        <a href="">Influencer Marketing</a>
+                        <a href="">Community Management</a>
+                        <a href="">Mobile App Marketing</a>
+                        <a href="">Music Promotion</a>
+                        <a href="">Book & eBook Marketing</a>
+                        <a href="">Podcast Marketing</a>
+                        <a href="">Affiliate Marketing</a>
+                        <a href="">Other</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="" class="dropDownBtn">Writing & Translation</a>
+            <div class="dropDownCnt">
+                <div class="hover1">
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                    <div>
+                        <h3>Logo & Brand Identity</h3>
+                        <a href="">Logo Design</a>
+                        <a href="">Brand Styles Guides</a>
+                        <a href="">Fonts & Typography</a>
+                        <a href="">Business Cards & Stationery</a>
+                        <h3>Gaming</h3>
+                        <a href="">Game Art</a>
+                        <a href="">Graphics for Streamers</a>
+                        <a href="">Twitch Store</a>
+                        <h3>Art & Illustration</h3>
+                        <a href="">Illustration</a>
+                        <a href="">NFT Art</a>
+                        <a href="">Pattern Design</a>
+                        <a href="">Portraits & Caricatures</a>
+                        <a href="">Cartoons & Comics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="">Video & Animation</a>
+            <div class="dropDownCnt">
+                <div class="hover2">
+                    <div>
+                        <a href="">Social Media Marketing</a>
+                        <a href="">Social Media Advertising</a>
+                        <a href="">Search Engine Optimization (SEO)</a>
+                        <a href="">Local SEO</a>
+                        <a href="">Marketing Strategy</a>
+                        <a href="">Public Relations</a>
+                        <a href="">Guest Posting</a>
+                        <a href="">Video Marketing</a>
+                        <a href="">Email Marketing</a>
+                        <a href="">Web Analytics</a>
+                        <a href="">Text Message Marketing</a>
+                        <a href="">Crowdfunding</a>
+                    </div>
+                    <div>
+                        <a href="">Marketing Advice</a>
+                        <a href="">Search Engine Marketing (SEM)</a>
+                        <a href="">Display Advertising</a>
+                        <a href="">E-Commerce Marketing</a>
+                        <a href="">Influencer Marketing</a>
+                        <a href="">Community Management</a>
+                        <a href="">Mobile App Marketing</a>
+                        <a href="">Music Promotion</a>
+                        <a href="">Book & eBook Marketing</a>
+                        <a href="">Podcast Marketing</a>
+                        <a href="">Affiliate Marketing</a>
+                        <a href="">Other</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <a href="">Video & Animation</a>
+        <a href="">Music & Audio</a>
+        <a href="">Programming & Tech</a>
+        <a href="">Business</a>
+        <a href="">Lifestyle</a>
+        <a href="">Trading</a>
+    </div>
+    <p>FIVERR > GRAPHICS & DESIGN ></p>
+    <div>
+        <h1>Logo Design</h1>
+        <p>Stand out from the crowd with a logo that fits your brand personality. &nbsp;<a href="">How Fiverr Works</a></p>
+    </div>
+    <h3>Select logo style</h3>
+    <div id="mid-1">
+        <div>
+            <img src="	https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/flat_minimalist.d9d3dc3.svg">
+            <h3>Minimalist</h3>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    
+    
+    
 </body>
 </html>
+<script>
+    window.addEventListener("scroll", function(){
+        if(window.pageYOffset < 96.5){
+            document.querySelector("#header2").style.visibility="hidden";
+            document.querySelector("#header1").style.backgroundColor="white";
+            document.querySelector(".input").style.visibility="hidden";
+            
+        }else{
+            document.querySelector("#header2").style.visibility="visible";
+            document.querySelector("#header1").style.backgroundColor="#ac3f5b";
+            document.querySelector(".input").style.visibility="visible";
+        }
+        
+    });
+   
+</script>
